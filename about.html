@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+     <section class="nav">
+        <nav>
+            <!-- logo image -->
+            <div class="logo1">
+                <img src="logo-image.webp" alt="AMUNO Investments Logo">
+            </div>
+            <div class="logo">AMUNO INVESTMENTS LTD</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    
+    <!-- ABOUT SECTION -->
+     <!-- WHO WE ARE -->
+      <section class="who-we-are">
+        <h2>Who We Are</h2>
+        <p>
+AMUNO Investments Limited is a dynamic and forward-thinking investment company based in Kampala, Uganda. We specialize in identifying, developing, and managing high-value investment opportunities across key sectors including real estate, infrastructure, and business development.
+
+With a strong understanding of local and regional markets, we work closely with individuals, businesses, and institutional partners to create sustainable wealth and long-term financial growth. Our team of experienced professionals is dedicated to delivering exceptional service and innovative solutions that meet the unique needs of our clients. At AMUNO Investments Limited, we are committed to building lasting relationships and contributing to the economic development of Uganda and the broader East African region.</p>
+      </section>  
+      <!-- SECTIONS TO SHOW WHO WE ARE -->
+       <section class="imagelibrary">
+        <img src="money-grow.webp" alt="Who We Are Image">
+        <img src="team-at-work.jpg" alt="Who We Are Image 2">
+        <img src="talking-to-employees.jpg" alt="Who We Are Image 3">
+        <img src="real-estates.jpg" alt="Who We Are Image 4">
+        <img src="sit on money.jpg" alt="Who We Are Image 5">
+        <img src="money-in-tin.jpg" alt="Who We Are Image 6">
+       </section>
+      
+      <!-- OUR STORY -->
+        <section class="our-story">
+            <h2>Our Story</h2>
+            <p>AMUNO Investments Limited was founded in 2005 by a group of passionate entrepreneurs with a vision to create a leading investment firm that would drive economic growth and development in Uganda. Starting with a small team and limited resources, we focused on building strong relationships with local communities, businesses, and government entities. Over the years, we have successfully executed numerous projects in real estate, infrastructure, and business development, earning a reputation for integrity, innovation, and excellence. Our commitment to sustainable development and social responsibility has been a cornerstone of our success, and we continue to strive for excellence in all our endeavors.</p>
+        </section>
+
+         <!-- button -->
+                <button class="btn3">CLICK FOR OFFERS 💖</button>
+                <!-- dark background -->
+                <div id="overlay"></div>
+                <!-- popup -->
+                 <div class="popup">
+                    <h2>investments advert</h2>
+                    <video controls autoplay width="60%" height="100%" muted >
+                        <source src="video.mp4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button id="close-btn">Close</button>
+
+                 </div>
+
+        <!-- OUR APPROACH -->
+        <section class="our-approach">
+          <div class="img">
+            <img src="point-at the curve.jpg" alt="Our Approach Image">
+            <img src="investments-curve.webp" alt="Our Approach Image 2">
+          </div>
+            <div class="text">
+                <h2>Our Approach</h2>
+                <p>At AMUNO Investments Limited, our approach is centered around a deep understanding of the markets we operate in and a commitment to delivering value to our clients. We take a holistic view of investment opportunities, considering not only financial returns but also social and environmental impacts. Our team conducts thorough research and analysis to identify high-potential projects and develop innovative solutions that meet the unique needs of our clients. We prioritize transparency, integrity, and collaboration in all our dealings, working closely with stakeholders to ensure the success of our investments and contribute to the sustainable development of the communities we serve.</p>
+            </div>
+            <video height="300" controls autoplay muted><source src="video.mp4.mp4"type="video/mp4"></video>
+            <video height="300" controls autoplay muted><source src="video2.mp4.mp4"type="video/mp4"></video>
+        </section>
+
+        <!-- footer section -->
+    <section>
+         <footer>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:niwainesincere@gmail.com">niwainesincere@gmail.com</a></p>
+                <p>Phone: +256 767 060390</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+                <div class="footer-legal">
+                    <p>&copy; 2024 AMUNO INVESTMENTS LTD. All rights reserved.</p>      </div>
+                
+        </footer>
+    </section>
+    <script>
+
+
+
+            // popup functionality
+            const btn = document.querySelector('.btn3');
+            const overlay = document.getElementById('overlay');
+            const popup = document.querySelector('.popup');
+            const closeBtn = document.getElementById('close-btn');
+
+            btn.addEventListener('click', () => {
+                overlay.style.display = 'block';
+                popup.style.display = 'block';
+            });
+
+            closeBtn.addEventListener('click', () => {
+                overlay.style.display = 'none';
+                popup.style.display = 'none';
+            });
+    </script>
+</body>
+</html>
